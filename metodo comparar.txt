@@ -1,0 +1,10 @@
+public static boolean esNumero(String valor){
+        try{
+            if(valor!=null){
+                Integer.parseInt(valor);
+            }
+        }catch(NumberFormatException nfe){
+            return false;
+        }
+        return true;
+    }
